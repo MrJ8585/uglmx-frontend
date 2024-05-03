@@ -1,17 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import Login from './pages/Login'
+import Dashboard from './pages/Dashboard'
+import Test from './pages/Test'
+import AdminDashboard from './pages/AdminDashboard'
 
 function App() {
 
   return (
     <HashRouter>
-      <div>
+      <div className='overflow-x-hidden no-scrollbar'>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Test />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path='/admin-dashboard' element={<AdminDashboard />} />
         </Routes>
       </div>
     </HashRouter>

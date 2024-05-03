@@ -1,10 +1,19 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import {Stack, Box, Container, TextField, FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton, Button, Typography} from "@mui/material";
+import {
+    Stack, 
+    Box, 
+    TextField, 
+    FormControl, 
+    InputLabel, 
+    OutlinedInput, 
+    InputAdornment, 
+    IconButton, 
+    Typography
+} from "@mui/material";
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import example from "../assets/example.png";
-import logo2 from "../assets/logo2.png";
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import EastIcon from '@mui/icons-material/East';
@@ -33,7 +42,7 @@ function Login(){
     return (
         <div className="flex flex-col h-screen w-screen bg-white">
             <div className="flex flex-row justify-center md:justify-start h-[10%]">
-                <img src={logo2} alt="Logo" className="h-[200%] w-auto z-10"/>
+                <img src={example} alt="Logo" className="h-[100%] w-auto z-10"/>
             </div>
             <div className="flex text-start items-center justify-center h-[90%]">
                 <Box
@@ -132,7 +141,7 @@ function Login(){
                                 <hr className="flex-1 my-0 mx-3 border-gray-400" style={{height: '1px'}}/>
                             </div>
                             <div className="flex items-center justify-center rounded-lg dark:bg-gray-800">
-                                <button className="items-center justify-center px-3Q py-1 md:px-4 md:py-2 border flex gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150">
+                                <button className="items-center justify-center px-3 py-1 md:px-4 md:py-2 border flex gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150">
                                     <img className="w-4 h-4 md:w-6 md:h-6" src="https://www.svgrepo.com/show/475656/google-color.svg" loading="lazy" alt="google logo" />
                                     <span className=" text-sm md:text-base">Login with Google</span>
                                 </button>
